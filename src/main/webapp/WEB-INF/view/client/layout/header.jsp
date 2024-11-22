@@ -21,6 +21,8 @@
 
     <!-- Favicon -->
     <link rel="shortcut icon" href="/assets/images/favicon.ico" />
+    <link rel="stylesheet" href="/assets/css/client.css">
+
 </head>
 
 <body>

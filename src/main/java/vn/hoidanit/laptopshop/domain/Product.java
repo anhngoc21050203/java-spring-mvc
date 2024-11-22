@@ -1,10 +1,13 @@
 package vn.hoidanit.laptopshop.domain;
 
+import io.micrometer.common.lang.NonNull;
+import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Size;
 
 @Entity
 @Table(name = "products")
@@ -13,15 +16,38 @@ public class Product {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @NonNull
+    @Size(min = 5, max = 255, message = "Name must be between 5 and 255 characters")
     private String name;
+
+    @NonNull
     private double price;
+    @NonNull
     private String image;
+
+    @NonNull
+    @Column(columnDefinition = "TEXT")
     private String description;
+
+    @NonNull
+    @Size(min = 10, max = 255)
+    private String shortDescription;
+
+    @NonNull
     private long quantity;
     private long sold;
     private long categoryId;
     private String factory;
     private String target;
+
+    public String getShortDescription() {
+        return shortDescription;
+    }
+
+    public void setShortDescription(String shortDescription) {
+        this.shortDescription = shortDescription;
+    }
 
     public Product() {
     }

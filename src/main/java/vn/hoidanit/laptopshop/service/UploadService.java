@@ -20,6 +20,10 @@ public class UploadService {
 
     public String handleUploadFile(MultipartFile file, String path) {
 
+        if (file.isEmpty()) {
+            return "";
+        }
+
         String fileName = "";
         String rootPath = this.servletContext.getRealPath("/resources/assets/images");
         try {
@@ -36,13 +40,21 @@ public class UploadService {
             stream.write(imageBytes);
             stream.close();
 
-            fileName = "/images/" + relativePath.replace("\\", "/");
+            fileName = "images/" + relativePath.replace("\\", "/");
 
         } catch (IOException e) {
             e.printStackTrace();
         }
 
         return fileName;
+    }
+
+    public void deleteFile(String path) {
+        String rootPath = this.servletContext.getRealPath("/resources/assets");
+        File file = new File(rootPath + path);
+        if (file.exists()) {
+            file.delete();
+        }
     }
 
 }

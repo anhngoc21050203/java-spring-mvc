@@ -2,6 +2,7 @@ package vn.hoidanit.laptopshop.domain;
 
 import java.util.List;
 
+import io.micrometer.common.lang.NonNull;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
@@ -10,6 +11,9 @@ import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.OneToMany;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.Email;
+import jakarta.validation.constraints.Size;
+import vn.hoidanit.laptopshop.service.validator.StrongPassword;
 
 @Entity
 @Table(name = "users")
@@ -17,10 +21,20 @@ public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;
+
+    @NonNull
+    @Email(message = "Email is invalid", regexp = "^[A-Za-z0-9+_.-]+@(.+)$")
     private String email;
+
+    @NonNull
+    @Size(min = 6, message = "Password must be at least 6 characters")
     private String password;
+
+    @NonNull
     private String fullName;
     private String address;
+    @NonNull
+    @Size(min = 10, max = 11, message = "Phone number must be 10 or 11 characters")
     private String phone;
     private String avatar;
 

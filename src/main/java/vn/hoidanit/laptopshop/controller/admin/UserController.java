@@ -1,17 +1,15 @@
 package vn.hoidanit.laptopshop.controller.admin;
 
-import java.io.BufferedOutputStream;
-import java.io.File;
-import java.io.IOException;
 import java.util.List;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import jakarta.servlet.ServletContext;
+import jakarta.validation.Valid;
 import vn.hoidanit.laptopshop.domain.User;
 import vn.hoidanit.laptopshop.service.UploadService;
 import vn.hoidanit.laptopshop.service.UserService;
@@ -29,32 +27,27 @@ public class UserController {
         this.passwordEncoder = passwordEncoder;
     }
 
-    @GetMapping("/")
-    public String getHomePage(Model model) {
-        List<User> users = this.userService.findAll();
-        model.addAttribute("usersi", users);
-        System.out.println("Users: " + users);
-        return "/client/home";
-    }
-
     @GetMapping("/admin/user")
     public String getHomePageUser(Model model) {
         List<User> users = this.userService.findAll();
         model.addAttribute("usersi", users);
-        return "/admin/user/index";
+        return "admin/user/index";
     }
 
     @GetMapping("/admin/user/create")
     public String createUser(Model model) {
         model.addAttribute("newUser", new User());
-        return "/admin/user/create";
+        return "admin/user/create";
     }
 
     @PostMapping("/admin/user/store")
-    public String storeUser(Model model, @ModelAttribute("newUser") User newUser,
+    public String storeUser(Model model, @ModelAttribute("newUser") @Valid User newUser, BindingResult bindingResult,
             @RequestParam("image") MultipartFile image) {
 
-        this.uploadService.handleUploadFile(image, "avatar");
+        if (bindingResult.hasErrors()) {
+            return "admin/user/create";// Return to the form view if there are validation errors
+        }
+
         String avatar = this.uploadService.handleUploadFile(image, "avatar");
         String hashPassword = this.passwordEncoder.encode(newUser.getPassword());
         newUser.setAvatar(avatar);
@@ -70,7 +63,7 @@ public class UserController {
         User users = this.userService.findById(id);
         model.addAttribute("id", id);
         model.addAttribute("user", users);
-        return "/admin/user/show";
+        return "admin/user/show";
     }
 
     @RequestMapping(value = "/admin/user/{id}/edit")
@@ -78,7 +71,7 @@ public class UserController {
         User currenUser = this.userService.findById(id);
         model.addAttribute("id", id);
         model.addAttribute("user", currenUser);
-        return "/admin/user/edit";
+        return "admin/user/edit";
     }
 
     @RequestMapping(value = "/admin/user/update", method = RequestMethod.POST)

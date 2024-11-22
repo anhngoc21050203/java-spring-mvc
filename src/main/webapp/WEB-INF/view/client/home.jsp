@@ -46,53 +46,59 @@
             </div>
         </div>
         <!-- Hero End -->
-
-        <div class="container-fluid py-5 bg-light">
-            <div class="container">
+        <!-- Featurs Section Start -->
+        <div class="container-fluid featurs py-5">
+            <div class="container py-5">
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-3">
-                        <div class="text-center p-4 bg-white shadow rounded">
-                            <div class="d-flex justify-content-center align-items-center mb-4 bg-primary rounded-circle text-white"
-                                style="width: 60px; height: 60px;">
-                                <i class="mdi mdi-truck-delivery fs-4"></i>
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-car-side fa-3x text-white"></i>
                             </div>
-                            <h5>Free Shipping</h5>
-                            <p class="text-muted">On orders over $300</p>
+                            <div class="featurs-content text-center">
+                                <h5>Free Shipping</h5>
+                                <p class="mb-0">Free on order over $300</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <div class="text-center p-4 bg-white shadow rounded">
-                            <div class="d-flex justify-content-center align-items-center mb-4 bg-success rounded-circle text-white"
-                                style="width: 60px; height: 60px;">
-                                <i class="mdi mdi-lock fs-4"></i>
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-user-shield fa-3x text-white"></i>
                             </div>
-                            <h5>Secure Payment</h5>
-                            <p class="text-muted">100% Secure Transactions</p>
+                            <div class="featurs-content text-center">
+                                <h5>Security Payment</h5>
+                                <p class="mb-0">100% security payment</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <div class="text-center p-4 bg-white shadow rounded">
-                            <div class="d-flex justify-content-center align-items-center mb-4 bg-warning rounded-circle text-white"
-                                style="width: 60px; height: 60px;">
-                                <i class="mdi mdi-refresh fs-4"></i>
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fas fa-exchange-alt fa-3x text-white"></i>
                             </div>
-                            <h5>Easy Returns</h5>
-                            <p class="text-muted">30 Days Money Back</p>
+                            <div class="featurs-content text-center">
+                                <h5>30 Day Return</h5>
+                                <p class="mb-0">30 day money guarantee</p>
+                            </div>
                         </div>
                     </div>
                     <div class="col-md-6 col-lg-3">
-                        <div class="text-center p-4 bg-white shadow rounded">
-                            <div class="d-flex justify-content-center align-items-center mb-4 bg-danger rounded-circle text-white"
-                                style="width: 60px; height: 60px;">
-                                <i class="mdi mdi-phone fs-4"></i>
+                        <div class="featurs-item text-center rounded bg-light p-4">
+                            <div class="featurs-icon btn-square rounded-circle bg-secondary mb-5 mx-auto">
+                                <i class="fa fa-phone-alt fa-3x text-white"></i>
                             </div>
-                            <h5>24/7 Support</h5>
-                            <p class="text-muted">We’re Always Here</p>
+                            <div class="featurs-content text-center">
+                                <h5>24/7 Support</h5>
+                                <p class="mb-0">Support every time fast</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+        <!-- Featurs Section End -->
+
 
         <!-- Fruits Shop Start-->
         <div class="container-fluid fruite py-5">
@@ -558,7 +564,7 @@
         </div>
         <!-- Fruits Shop End-->
 
-        <div class="container-fluid service py-5">
+        <!-- <div class="container-fluid service py-5">
             <div class="container py-5">
                 <div class="row g-4 justify-content-center">
                     <div class="col-md-6 col-lg-4">
@@ -602,7 +608,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
         <!-- Featurs End -->
 
         <!-- Vesitable Shop Start-->
@@ -614,7 +620,7 @@
                         <div class="vesitable-img">
                             <img src="images/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        <div class="text-white bg-green px-3 py-1 rounded position-absolute"
                             style="top: 10px; right: 10px;">
                             Vegetable</div>
                         <div class="p-4 rounded-bottom">
@@ -631,7 +637,7 @@
                         <div class="vesitable-img">
                             <img src="images/vegetable-item-1.jpg" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        <div class="text-white bg-green px-3 py-1 rounded position-absolute"
                             style="top: 10px; right: 10px;">
                             Vegetable</div>
                         <div class="p-4 rounded-bottom">
@@ -648,7 +654,7 @@
                         <div class="vesitable-img">
                             <img src="images/vegetable-item-3.png" class="img-fluid w-100 rounded-top bg-light" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        <div class="text-white bg-green px-3 py-1 rounded position-absolute"
                             style="top: 10px; right: 10px;">
                             Vegetable</div>
                         <div class="p-4 rounded-bottom">
@@ -665,7 +671,7 @@
                         <div class="vesitable-img">
                             <img src="images/vegetable-item-4.jpg" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        <div class="text-white bg-green px-3 py-1 rounded position-absolute"
                             style="top: 10px; right: 10px;">
                             Vegetable</div>
                         <div class="p-4 rounded-bottom">
@@ -682,7 +688,7 @@
                         <div class="vesitable-img">
                             <img src="images/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        <div class="text-white bg-green px-3 py-1 rounded position-absolute"
                             style="top: 10px; right: 10px;">
                             Vegetable</div>
                         <div class="p-4 rounded-bottom">
@@ -699,7 +705,7 @@
                         <div class="vesitable-img">
                             <img src="images/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        <div class="text-white bg-green px-3 py-1 rounded position-absolute"
                             style="top: 10px; right: 10px;">
                             Vegetable</div>
                         <div class="p-4 rounded-bottom">
@@ -716,7 +722,7 @@
                         <div class="vesitable-img">
                             <img src="images/vegetable-item-5.jpg" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        <div class="text-white bg-green px-3 py-1 rounded position-absolute"
                             style="top: 10px; right: 10px;">
                             Vegetable</div>
                         <div class="p-4 rounded-bottom">
@@ -733,7 +739,7 @@
                         <div class="vesitable-img">
                             <img src="images/vegetable-item-6.jpg" class="img-fluid w-100 rounded-top" alt="">
                         </div>
-                        <div class="text-white bg-primary px-3 py-1 rounded position-absolute"
+                        <div class="text-white bg-green px-3 py-1 rounded position-absolute"
                             style="top: 10px; right: 10px;">
                             Vegetable</div>
                         <div class="p-4 rounded-bottom">
@@ -1059,7 +1065,7 @@
                             </div>
                             <div class="d-flex align-items-center flex-nowrap">
                                 <div class="bg-secondary rounded">
-                                    <img src="/images/testimonial-1.jpg" class="img-fluid rounded"
+                                    <img src="images/testimonial-1.jpg" class="img-fluid rounded"
                                         style="width: 100px; height: 100px;" alt="">
                                 </div>
                                 <div class="ms-4 d-block">
@@ -1087,7 +1093,7 @@
                             </div>
                             <div class="d-flex align-items-center flex-nowrap">
                                 <div class="bg-secondary rounded">
-                                    <img src="/images/testimonial-1.jpg" class="img-fluid rounded"
+                                    <img src="images/testimonial-1.jpg" class="img-fluid rounded"
                                         style="width: 100px; height: 100px;" alt="">
                                 </div>
                                 <div class="ms-4 d-block">
@@ -1115,7 +1121,7 @@
                             </div>
                             <div class="d-flex align-items-center flex-nowrap">
                                 <div class="bg-secondary rounded">
-                                    <img src="/images/testimonial-1.jpg" class="img-fluid rounded"
+                                    <img src="images/testimonial-1.jpg" class="img-fluid rounded"
                                         style="width: 100px; height: 100px;" alt="">
                                 </div>
                                 <div class="ms-4 d-block">
@@ -1136,5 +1142,85 @@
             </div>
         </div>
         <!-- Tastimonial End -->
+
+        <!-- Footer Start -->
+        <div class="container-fluid bg-dark text-white-50 footer pt-5 mt-5">
+            <div class="container py-5">
+                <div class="pb-4 mb-4" style="border-bottom: 1px solid rgba(226, 175, 24, 0.5) ;">
+                    <div class="row g-4">
+                        <div class="col-lg-3">
+                            <a href="#">
+                                <h1 class="text-primary mb-0">Fruitables</h1>
+                                <p class="text-secondary mb-0">Fresh products</p>
+                            </a>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="position-relative mx-auto">
+                                <input class="form-control border-0 w-100 py-3 px-4 rounded-pill" type="number"
+                                    placeholder="Your Email">
+                                <button type="submit"
+                                    class="btn btn-primary border-0 border-secondary py-3 px-4 position-absolute rounded-pill text-white"
+                                    style="top: 0; right: 0;">Subscribe Now</button>
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <div class="d-flex justify-content-end pt-3">
+                                <a class="btn  btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                        class="fab fa-twitter"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                        class="fab fa-facebook-f"></i></a>
+                                <a class="btn btn-outline-secondary me-2 btn-md-square rounded-circle" href=""><i
+                                        class="fab fa-youtube"></i></a>
+                                <a class="btn btn-outline-secondary btn-md-square rounded-circle" href=""><i
+                                        class="fab fa-linkedin-in"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row g-5">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Why People Like us!</h4>
+                            <p class="mb-4">typesetting, remaining essentially unchanged. It was
+                                popularised in the 1960s with the like Aldus PageMaker including of Lorem Ipsum.</p>
+                            <a href="" class="btn border-secondary py-2 px-4 rounded-pill text-primary">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Shop Info</h4>
+                            <a class="btn-link" href="">About Us</a>
+                            <a class="btn-link" href="">Contact Us</a>
+                            <a class="btn-link" href="">Privacy Policy</a>
+                            <a class="btn-link" href="">Terms & Condition</a>
+                            <a class="btn-link" href="">Return Policy</a>
+                            <a class="btn-link" href="">FAQs & Help</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="d-flex flex-column text-start footer-item">
+                            <h4 class="text-light mb-3">Account</h4>
+                            <a class="btn-link" href="">My Account</a>
+                            <a class="btn-link" href="">Shop details</a>
+                            <a class="btn-link" href="">Shopping Cart</a>
+                            <a class="btn-link" href="">Wishlist</a>
+                            <a class="btn-link" href="">Order History</a>
+                            <a class="btn-link" href="">International Orders</a>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-item">
+                            <h4 class="text-light mb-3">Contact</h4>
+                            <p>Address: 1429 Netus Rd, NY 48247</p>
+                            <p>Email: Example@gmail.com</p>
+                            <p>Phone: +0123 4567 8910</p>
+                            <p>Payment Accepted</p>
+                            <img src="images/payment.png" class="img-fluid" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer End -->
 
         <jsp:include page="/WEB-INF/view/client/layout/footer.jsp" />

@@ -29,8 +29,13 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="email">Email:</label>
-                                                <form:input type="email" path="email" class="form-control" id="email"
-                                                    placeholder="Email" required="true" />
+                                                <c:set var="emailError">
+                                                    <form:errors path="email" />
+                                                </c:set>
+                                                <form:input type="email" path="email"
+                                                    class="form-control ${not empty emailError ? 'is-invalid' : ''}"
+                                                    id="email" placeholder="Email" required="true" />
+                                                <form:errors path="email" cssClass="invalid-feedback" />
                                             </div>
                                         </div>
 
@@ -38,8 +43,13 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="password">Password:</label>
-                                                <form:password path="password" class="form-control" id="password"
-                                                    placeholder="Password" required="true" />
+                                                <c:set var="passwordError">
+                                                    <form:errors path="password" />
+                                                </c:set>
+                                                <form:password path="password"
+                                                    class="form-control form-control ${not empty passwordError ? 'is-invalid' : ''}"
+                                                    id="password" placeholder="Password" required="true" />
+                                                <form:errors path="password" cssClass="invalid-feedback" />
                                             </div>
                                         </div>
 
@@ -47,8 +57,13 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="phone">Phone:</label>
-                                                <form:input path="phone" class="form-control" id="phone"
-                                                    placeholder="Phone" required="true" />
+                                                <c:set var="phoneError">
+                                                    <form:errors path="phone" />
+                                                </c:set>
+                                                <form:input path="phone"
+                                                    class="form-control ${not empty phoneError ? 'is-invalid' : ''}"
+                                                    id="phone" placeholder="Phone" required="true" />
+                                                <form:errors path="phone" cssClass="invalid-feedback" />
                                             </div>
                                         </div>
 
@@ -56,8 +71,13 @@
                                         <div class="col-md-6">
                                             <div class="form-group">
                                                 <label for="fullname">Full Name:</label>
-                                                <form:input path="fullName" class="form-control" id="fullname"
-                                                    placeholder="Full Name" required="true" />
+                                                <c:set var="fullNameError">
+                                                    <form:errors path="fullName" />
+                                                </c:set>
+                                                <form:input path="fullName"
+                                                    class="form-control ${not empty fullNameError ? 'is-invalid' : ''}"
+                                                    id="fullname" placeholder="Full Name" required="true" />
+                                                <form:errors path="fullName" cssClass="invalid-feedback" />
                                             </div>
                                         </div>
 
@@ -65,8 +85,13 @@
                                         <div class="col-md-12">
                                             <div class="form-group">
                                                 <label for="address">Address:</label>
-                                                <form:input path="address" class="form-control" id="address"
-                                                    placeholder="Address" required="true" />
+                                                <c:set var="addressError">
+                                                    <form:errors path="address" />
+                                                </c:set>
+                                                <form:input path="address"
+                                                    class="form-control ${not empty address ? 'is-invalid' : ''}"
+                                                    id="address" placeholder="Address" required="true" />
+                                                <form:errors path="address" cssClass="invalid-feedback" />
                                             </div>
                                         </div>
 
